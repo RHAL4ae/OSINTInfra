@@ -1,0 +1,65 @@
+{
+  "trigger": {
+    "schedule": {
+      "interval": "5m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "indices": [
+          "snapchat_osint",
+          "tiktok_osint",
+          "instagram_osint"
+        ],
+        "body": {
+          "query": {
+            "bool": {
+              "should": [
+                {
+                  "match": {
+                    "risk_level": "high"
+                  }
+                },
+                {
+                  "match": {
+                    "sentiment": "negative"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          "sort": [
+            {
+              "@timestamp": {
+                "order": "desc"
+              }
+            }
+          ],
+          "size": 5
+        }
+      }
+    }
+  },
+  "condition": {
+    "compare": {
+      "ctx.payload.hits.total.value": {
+        "gt": 0
+      }
+    }
+  },
+  "actions": {
+    "log_alert": {
+      "index": {
+        "index": "alert_log",
+        "doc_id": "rahhal_{{ctx.execution_time}}",
+        "doc": {
+          "time": "{{ctx.execution_time}}",
+          "alert_type": "high_risk_or_negative",
+          "items": "{{#toJson}}ctx.payload.hits.hits{{/toJson}}"
+        }
+      }
+    }
+  }
+}

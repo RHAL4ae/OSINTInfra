@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+elasticsearch
+transformers
+langdetect
+requests
+requests-html
+telethon
+snscrape
+praw
+python-docx
+python-pptx
+matplotlib
+pydantic
+jinja2
+aiohttp

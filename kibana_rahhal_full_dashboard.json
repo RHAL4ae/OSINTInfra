@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "_id": "rahhal_full_osint_dashboard",
+      "_type": "dashboard",
+      "_source": {
+        "title": "رحّال | الرصد الثلاثي الذكي (Snapchat + TikTok + Instagram)",
+        "hits": 0,
+        "description": "لوحة رصد موحدة لتحليل محتوى المنصات الاجتماعية الثلاث ضمن مشروع رحّال",
+        "panelsJSON": "[]",
+        "optionsJSON": "{\"useMargins\":true,\"hidePanelTitles\":false}",
+        "version": 1,
+        "timeRestore": true,
+        "timeTo": "now",
+        "timeFrom": "now-7d",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      }
+    }
+  ],
+  "version": "8.13.4"
+}

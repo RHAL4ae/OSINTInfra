@@ -1,0 +1,22 @@
+{
+  "objects": [
+    {
+      "_id": "facebook_osint_dashboard",
+      "_type": "dashboard",
+      "_source": {
+        "title": "\u0631\u062d\u0651\u0627\u0644 | \u0631\u0635\u062f \u0645\u0646\u0634\u0648\u0631\u0627\u062a Facebook",
+        "description": "\u0644\u0648\u062d\u0629 \u0631\u0635\u062f \u0627\u0644\u0645\u0634\u0627\u0639\u0631 \u0644\u0645\u0646\u0634\u0648\u0631\u0627\u062a Facebook \u0627\u0644\u0639\u0627\u0645\u0629",
+        "panelsJSON": "[]",
+        "optionsJSON": "{\"useMargins\":true,\"hidePanelTitles\":false}",
+        "version": 1,
+        "timeRestore": true,
+        "timeTo": "now",
+        "timeFrom": "now-7d",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      }
+    }
+  ],
+  "version": "8.13.4"
+}

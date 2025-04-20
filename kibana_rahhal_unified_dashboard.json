@@ -1,0 +1,23 @@
+{
+  "objects": [
+    {
+      "_id": "rahhal_unified_dashboard",
+      "_type": "dashboard",
+      "_source": {
+        "title": "رحّال | رصد Snapchat و TikTok",
+        "hits": 0,
+        "description": "لوحة موحدة لرصد وتحليل محتوى Snapchat وTikTok ضمن مشروع رحّال",
+        "panelsJSON": "[]",
+        "optionsJSON": "{\"useMargins\":true,\"hidePanelTitles\":false}",
+        "version": 1,
+        "timeRestore": true,
+        "timeTo": "now",
+        "timeFrom": "now-7d",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      }
+    }
+  ],
+  "version": "8.13.4"
+}
